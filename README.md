@@ -1,4 +1,4 @@
-# Static Analysis Triage Tool
+# Triage Tool for Issues Identified by Static Analysis
 
 
 > In medicine, triage (/ˈtriːɑːʒ, triˈɑːʒ/) is a practice invoked when acute care cannot be provided for lack of resources. The process rations care towards those who are most in need of immediate care, and who benefit most from it. 
@@ -7,10 +7,13 @@
 
 Sometimes there are so many problems you just don't know where to start.
 
-The goal of this tool is to provide a means of _categorizing_ and identifying a multitude of problems inside the context of a javascript project.
+The goal of this tool is to provide a means of _categorizing_ and identifying the _multitude_ of problems that other static analysis tools may find for a target javascript project.
 
-It depends on existing tools like
+NOTE: This is a 'personal tool' that will change as my needs change. Unless you are me, or have direct access to me to act as a guide, this project should be used with caution. Take from it what appears interesting, I offer no support or guarantees. I expect this code to evolve rapidly and unexpectedly in different directions.
 
+Target Project Dependencies:
+- typescript config 
+- eslint config (planned)
 
 ## Usage
 
@@ -26,3 +29,6 @@ $ ./scripts/dl-ts-error-codes.sh
 ```sh
 $ ./scripts/report.ts
 ```
+
+## TODO
+- Add eslint support
